@@ -113,3 +113,17 @@ nav ul li a {
     margin: 1rem 0;
   }
 }
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .theme-section {
+    padding: 1rem;
+  }
+
+  .cta-button {
+    padding: 8px 15px;
+  }
+}
