@@ -96,3 +96,20 @@ nav ul li a {
 .theme-section h3 {
   color: #333;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .theme-section {
+    margin: 1rem 0;
+  }
+}
