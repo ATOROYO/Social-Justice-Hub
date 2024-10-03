@@ -127,6 +127,13 @@ header {
   background-color: #555;
 }
 
+/* Mobile View (Hamburger Menu) */
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  display: none; /* Hidden by default, shown in mobile view */
+}
+
 /* Footer styling */
 footer {
   text-align: center;
