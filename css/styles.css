@@ -1,129 +1,83 @@
-/* General Styling */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Global Styles */
+/* Body and container styling */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   background-color: #333;
   color: #fff;
-  padding: 1rem;
-  text-align: center;
-  position: relative;
 }
 
-header h1 {
-  text-align: left;
+.logo h1 {
+  font-size: 24px;
 }
 
-nav ul {
+/* Desktop navigation styling */
+.nav-links {
   list-style: none;
-  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #fff;
+.nav-links li a {
   text-decoration: none;
-  font-weight: bold;
-}
-
-/* Responsive Toggle Button */
-/* .toggle-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
+  color: white;
   padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #444;
+}
+
+/* Mobile View (Hamburger Menu) */
+.menu-icon {
+  font-size: 28px;
   cursor: pointer;
+  display: none; /* Hidden by default, shown in mobile view */
 }
 
-.toggle-btn.active {
-  background-color: #333;
-  color: #fff;
-} */
-
-/* Hero Section */
-.hero {
-  background-color: #4caf50;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
-}
-
-.hero h2 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-.theme-section {
-  padding: 2rem;
-  background-color: #fff;
-  margin: 1rem;
-  border-left: 5px solid #4caf50;
-}
-
-.theme-section h3 {
-  color: #333;
-}
-
-/* Media Queries for Responsiveness */
+/* Hide navigation links on mobile and show hamburger */
 @media (max-width: 768px) {
-  nav ul li {
-    display: block;
+  .nav-links {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
     text-align: center;
-    margin: 10px 0;
+    padding: 15px;
   }
 
-  .hero h2 {
-    font-size: 1.5rem;
+  .nav-links li a {
+    font-size: 20px;
   }
 
-  .theme-section {
-    margin: 1rem 0;
+  /* Show the menu icon */
+  .menu-icon {
+    display: block;
   }
 }
 
-@media (max-width: 480px) {
-  .hero {
-    padding: 1rem;
-  }
-
-  .theme-section {
-    padding: 1rem;
-  }
-
-  .cta-button {
-    padding: 8px 15px;
-  }
+/* Show nav when the active class is applied */
+.nav-links.active {
+  display: flex;
 }
