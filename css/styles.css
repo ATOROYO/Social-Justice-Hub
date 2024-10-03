@@ -41,3 +41,20 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
 }
+
+/* Responsive Toggle Button */
+.toggle-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.toggle-btn.active {
+  background-color: #333;
+  color: #fff;
+}
