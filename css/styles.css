@@ -127,16 +127,12 @@ header {
   background-color: #555;
 }
 
-/* Menu Icon Styling */
-.menu-icon {
-  width: 30px;
-  height: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+/* Mobile View (Hamburger Menu) */
+/* .menu-icon {
+  font-size: 28px;
   cursor: pointer;
-  z-index: 100; /* Ensure it stays above content */
-}
+  display: none;
+} */
 
 /* Footer styling */
 footer {
@@ -150,7 +146,7 @@ footer {
 /* Hide navigation links on mobile and show hamburger */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Initially hidden */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -170,12 +166,128 @@ footer {
   }
 
   /* Show the menu icon */
-  .menu-icon {
+  /* .menu-icon {
     display: block;
-  }
+  } */
+
+  /* Basic Styles for Menu Icon */
+  /* .menu-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+  } */
+
+  /* Span Styling */
+  /* .menu-icon span {
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background-color: #fff; /* Color of the lines */
+  /* border-radius: 2px;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  /* } */
+
+  /* Position the three lines */
+  /* .menu-icon span:nth-child(1) { */
+  /* top: 0px; Top line */
+  /* } */
+
+  /* .menu-icon span:nth-child(2) { */
+  /* top: 12px; Middle line */
+  /* } */
+
+  /* .menu-icon span:nth-child(3) {
+    top: 24px; Bottom line
+  } */
+
+  /* When the menu icon is active (clicked) */
+  /* .menu-icon.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 12px; Moves it to the center
+  } */
+
+  /* .menu-icon.active span:nth-child(2) {
+    opacity: 0; Hides the middle line
+  } */
+
+  /* .menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 12px; /* Moves it to the center */
+  /*} */
+
+  /* Navigation links (hidden initially) */
+  /* .nav-links ul {
+    list-style: none;
+    display: none;
+  } */
+
+  /* When active, display the navigation */
+  /* .nav-links.active ul {
+    display: block;
+  } */
 }
 
 /* Show nav when the active class is applied */
 .nav-links.active {
   display: flex;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-icon:hover {
+  color: #007bff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon.active {
+    content: "\2715"; /* Unicode for 'x' */
+    transform: rotate(90deg);
+  }
+
+  .container .nav-links.active {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-links.active li {
+    margin: 10px 0;
+  }
 }
