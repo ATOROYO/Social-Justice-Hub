@@ -160,6 +160,19 @@ header {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* For mobile view: when the menu is open, the icon should become an X */
+.menu-icon.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* Footer styling */
 footer {
   text-align: center;
