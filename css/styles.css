@@ -170,3 +170,8 @@ footer {
     display: block;
   }
 }
+
+/* Show nav when the active class is applied */
+.nav-links.active {
+  display: flex;
+}
