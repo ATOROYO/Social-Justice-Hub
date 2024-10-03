@@ -29,3 +29,9 @@ header {
   padding: 10px 20px;
   border-radius: 8px; /* Rounded corners for aesthetics */
 }
+
+/* Logo styling */
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
