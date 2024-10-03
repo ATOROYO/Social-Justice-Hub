@@ -54,3 +54,13 @@ header {
 .nav-links li a:hover {
   background-color: #555;
 }
+
+/* Main content area styling */
+.content {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: white;
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
