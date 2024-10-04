@@ -1,4 +1,4 @@
-.menu-icon {
+/* .menu-icon {
   display: none;
   font-size: 24px;
   cursor: pointer;
@@ -46,5 +46,145 @@
 
   .nav-links.active li {
     margin: 10px 0;
+  }
+} */
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #007bff; /* Facebook-like blue color */
+  color: white;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+/* Navigation bar styles */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links ul li {
+  display: inline-block;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Hamburger Menu Icon for Mobile */
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  display: none; /* Hidden by default, shown on mobile */
+}
+
+/* Responsive Design */
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #007bff; /* Original blue color */
+  color: white;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+/* Navigation styling */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links ul li {
+  margin-right: 20px;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Hover effect */
+.nav-links ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  font-size: 28px;
+  display: none; /* Hidden by default */
+  cursor: pointer;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .nav-links ul {
+    display: none; /* Hide the nav links initially on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #007bff;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active ul {
+    display: flex;
+  }
+
+  .nav-links ul li {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block; /* Show the hamburger icon on mobile */
   }
 }
