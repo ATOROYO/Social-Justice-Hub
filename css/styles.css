@@ -136,11 +136,105 @@ header {
 
 /* Footer styling */
 footer {
-  text-align: center;
   background-color: #333;
   color: white;
-  padding: 20px;
-  border-radius: 8px; /* Rounded corners for aesthetics */
+  padding: 40px 20px;
+  border-radius: 8px 8px 0 0; /* Rounded top corners for aesthetics */
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* About section */
+.footer-section.about {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Quick Links */
+.footer-section.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section.quick-links ul li {
+  margin: 10px 0;
+}
+
+.footer-section.quick-links ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section.quick-links ul li a:hover {
+  color: #555;
+}
+
+/* Contact Section */
+.footer-section.contact p {
+  font-size: 14px;
+}
+
+.footer-section.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section.contact a:hover {
+  color: #555;
+}
+
+.footer-section.contact i {
+  margin-right: 10px; /* Space between icons and text */
+}
+
+/* Social Media Icons */
+.footer-section.social .social-icon {
+  margin: 10px;
+  display: inline-block;
+  background-color: #444;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  font-size: 20px;
+  color: white;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.footer-section.social .social-icon:hover {
+  background-color: #555;
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.footer-section.social i {
+  vertical-align: middle; /* Center the icon vertically */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #555;
 }
 
 /* Hide navigation links on mobile and show hamburger */
