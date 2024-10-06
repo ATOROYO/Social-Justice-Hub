@@ -142,6 +142,71 @@ header {
   background-color: #555;
 }
 
+/* Quiz Section Styling */
+.quiz-section {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.quiz-section h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.quiz-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.quiz-question {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.quiz-question p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.quiz-question label {
+  font-size: 18px;
+  color: #555;
+}
+
+.quiz-question input {
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Quiz Result Styling */
+#quiz-result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #28a745;
+}
+
 /* Footer styling */
 footer {
   background-color: #333;
