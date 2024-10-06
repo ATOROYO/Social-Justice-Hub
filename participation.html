@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Participation in Governance</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main Navigation -->
+      <header>
+        <div class="logo">
+          <h1>Social Justice Hub</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="governance.html">Governance & Accountability</a></li>
+            <li><a href="economic.html">Economic Empowerment</a></li>
+            <li><a href="rights.html">Human Rights & Security</a></li>
+            <li><a href="education.html">Education & Skill Development</a></li>
+            <li><a href="environment.html">Environmental Sustainability</a></li>
+            <li><a href="transparency.html">Transparency</a></li>
+            <li>
+              <a href="participation.html">Participation in Governance</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger icon for mobile -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      </header>
+
+      <!-- Main Content -->
+
+      <section class="participation-section">
+        <h2>Youth Participation in Governance</h2>
+        <p>
+          Engaging in governance is crucial for every citizen, especially the
+          youth. Participation can take place through voting, signing petitions,
+          and joining civic organizations. Let’s discuss how you can make a
+          difference in your community.
+        </p>
+
+        <div class="discussion-section">
+          <div class="discussion-topic">
+            <h3>Voting</h3>
+            <p>
+              Voting is one of the most direct ways citizens can participate in
+              governance. It allows individuals to select leaders and influence
+              policies that impact their communities. How can we encourage more
+              young people to vote?
+            </p>
+            <button class="btn-discuss" onclick="openDiscussion('voting')">
+              Join the Discussion
+            </button>
+          </div>
+
+          <div class="discussion-topic">
+            <h3>Petitions</h3>
+            <p>
+              Petitions allow citizens to demand action from their government.
+              This can be used to challenge policies or introduce new ideas for
+              consideration. How effective are petitions in driving change?
+            </p>
+            <button class="btn-discuss" onclick="openDiscussion('petitions')">
+              Join the Discussion
+            </button>
+          </div>
+
+          <div class="discussion-topic">
+            <h3>Civic Organizations</h3>
+            <p>
+              Joining or forming civic organizations is a great way to advocate
+              for social issues and contribute to governance. What role do civic
+              organizations play in amplifying youth voices?
+            </p>
+            <button
+              class="btn-discuss"
+              onclick="openDiscussion('organizations')"
+            >
+              Join the Discussion
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div id="discussion-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeDiscussion()">&times;</span>
+          <h3 id="discussion-title"></h3>
+          <textarea
+            id="discussion-input"
+            placeholder="Share your thoughts..."
+            rows="5"
+          ></textarea>
+          <button class="btn-submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
