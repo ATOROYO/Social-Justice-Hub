@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accountability in Governance</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <dvi class="container">
+      <!-- Main Navigation -->
+      <header>
+        <div class="logo">
+          <h1>Social Justice Hub</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="governance.html">Governance & Accountability</a></li>
+            <li><a href="economic.html">Economic Empowerment</a></li>
+            <li><a href="rights.html">Human Rights & Security</a></li>
+            <li><a href="education.html">Education & Skill Development</a></li>
+            <li><a href="environment.html">Environmental Sustainability</a></li>
+            <li><a href="transparency.html">Transparency</a></li>
+            <li>
+              <a href="participation.html">Participation in Governance</a>
+            </li>
+            <li>
+              <a href="accountability.html">Accountability in Governance</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger icon for mobile -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      </header>
+
+      <!-- Main Content -->
+
+      <section class="accountability-section">
+        <h2>Strengthening Accountability in Governance</h2>
+        <p>
+          Accountability is crucial for a transparent and just society. It's
+          important for citizens to hold their leaders accountable for their
+          actions and decisions. Here, we explore different initiatives and
+          actions that can enhance accountability in governance.
+        </p>
+
+        <div class="interactive-section">
+          <div class="interactive-topic">
+            <h3>Initiatives for Accountability</h3>
+            <p>
+              What initiatives do you think are effective in promoting
+              government accountability? Share your ideas below and join the
+              discussion on how to make our leaders more responsible.
+            </p>
+            <textarea
+              id="initiative-input"
+              placeholder="Share your ideas..."
+              rows="4"
+            ></textarea>
+            <button class="btn-submit" onclick="submitIdea()">
+              Submit Your Idea
+            </button>
+          </div>
+
+          <div class="feedback-section">
+            <h3>Submitted Ideas</h3>
+            <ul id="submitted-ideas" class="ideas-list">
+              <!-- Submitted ideas will appear here -->
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2024 Social Justice Hub. All rights reserved.</p>
+      </footer>
+    </dvi>
+    <script src="js/main.js"></script>
+  </body>
+</html>
