@@ -296,6 +296,47 @@ header {
   margin-bottom: 30px;
 }
 
+/* Discussion Topic Cards */
+.discussion-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.discussion-topic {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.discussion-topic h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.discussion-topic p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.btn-discuss {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
+}
+
+.btn-discuss:hover {
+  background-color: #555;
+}
+
 /* Footer styling */
 footer {
   background-color: #333;
