@@ -142,6 +142,29 @@ header {
   background-color: #555;
 }
 
+/* Transparency Section Styling */
+.transparency-info {
+  background-color: #f9f9f9;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 40px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.transparency-info h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.transparency-info p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #666;
+}
+
 /* Quiz Section Styling */
 .quiz-section {
   background-color: #fff;
