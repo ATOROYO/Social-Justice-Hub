@@ -28,7 +28,29 @@ function toggleMenu() {
   navLinks.classList.toggle("active");
 }
 
-// Function to handle idea submission
+// Function to open the discussion modal with the correct topic in particapation.html
+function openDiscussion(topic) {
+  const modal = document.getElementById("discussion-modal");
+  const title = document.getElementById("discussion-title");
+
+  if (topic === "voting") {
+    title.textContent = "Discussion on Voting";
+  } else if (topic === "petitions") {
+    title.textContent = "Discussion on Petitions";
+  } else if (topic === "organizations") {
+    title.textContent = "Discussion on Civic Organizations";
+  }
+
+  modal.style.display = "block";
+}
+
+// Function to close the discussion modal
+function closeDiscussion() {
+  const modal = document.getElementById("discussion-modal");
+  modal.style.display = "none";
+}
+
+// Function to handle idea submission in accountabilty.html
 function submitIdea() {
   const ideaInput = document.getElementById("initiative-input");
   const ideasList = document.getElementById("submitted-ideas");
