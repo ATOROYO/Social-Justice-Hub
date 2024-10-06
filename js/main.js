@@ -27,3 +27,19 @@ function toggleMenu() {
   const navLinks = document.getElementById("nav-links");
   navLinks.classList.toggle("active");
 }
+
+// Function to handle idea submission
+function submitIdea() {
+  const ideaInput = document.getElementById("initiative-input");
+  const ideasList = document.getElementById("submitted-ideas");
+
+  if (ideaInput.value.trim() !== "") {
+    // Create a new list item for the submitted idea
+    const newIdea = document.createElement("li");
+    newIdea.textContent = ideaInput.value;
+    ideasList.appendChild(newIdea);
+
+    // Clear the input field after submission
+    ideaInput.value = "";
+  }
+}
