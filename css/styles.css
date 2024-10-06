@@ -178,7 +178,7 @@ footer {
 }
 
 .footer-section.quick-links ul li a:hover {
-  color: #555;
+  color: #f4b4ce;
 }
 
 /* Contact Section */
@@ -192,7 +192,7 @@ footer {
 }
 
 .footer-section.contact a:hover {
-  color: #555;
+  color: #f4b4ce;
 }
 
 .footer-section.contact i {
