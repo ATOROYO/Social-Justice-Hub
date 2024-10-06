@@ -467,6 +467,33 @@ header {
   background-color: #555;
 }
 
+/* Feedback Section */
+.feedback-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-section h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.ideas-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.ideas-list li {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
 /* Footer styling */
 footer {
   background-color: #333;
