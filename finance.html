@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Inclusion and Economic Growth</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main Navigation -->
+      <header>
+        <div class="logo">
+          <h1>Social Justice Hub</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="governance.html">Governance & Accountability</a></li>
+            <li><a href="economic.html">Economic Empowerment</a></li>
+            <li><a href="rights.html">Human Rights & Security</a></li>
+            <li><a href="education.html">Education & Skill Development</a></li>
+            <li><a href="environment.html">Environmental Sustainability</a></li>
+        </nav>
+
+        <!-- Hamburger icon for mobile -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      </header>
+
+      <!-- Main Content -->
+
+      <section class="finance-section">
+        <h2>Access to Financial Services for Economic Growth</h2>
+        <p>
+          Financial inclusion is essential for the economic growth of
+          marginalized communities. Here, we explore strategies and
+          opportunities to provide access to financial services and promote
+          economic empowerment for youth and underserved populations.
+        </p>
+
+        <div class="interactive-section">
+          <div class="interactive-topic">
+            <h3>Strategies for Financial Inclusion</h3>
+            <p>
+              What are the best ways to increase financial inclusion for
+              marginalized communities? Share your strategies or ideas below.
+            </p>
+            <textarea
+              id="strategy-input"
+              placeholder="Share your strategy..."
+              rows="4"
+            ></textarea>
+            <button class="btn-submit" onclick="submitStrategy()">
+              Submit Your Strategy
+            </button>
+          </div>
+
+          <div class="feedback-section">
+            <h3>Submitted Strategies</h3>
+            <ul id="submitted-strategies" class="ideas-list">
+              <!-- Submitted strategies will appear here -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="resources-section">
+          <h3>Resources for Financial Growth</h3>
+          <p>
+            Discover tools and platforms that can help youth and marginalized
+            communities gain access to financial services:
+          </p>
+          <ul>
+            <li><a href="#">Microfinance Programs</a></li>
+            <li><a href="#">Crowdfunding Platforms</a></li>
+            <li><a href="#">Small Business Loans</a></li>
+            <li><a href="#">Financial Literacy Programs</a></li>
+            <li><a href="#">Savings and Investment Opportunities</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2024 Social Justice Hub. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
