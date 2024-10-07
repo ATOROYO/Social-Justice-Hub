@@ -650,6 +650,38 @@ header {
   color: #333;
 }
 
+/* Quiz Section Styling */
+.quiz-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.quiz-section h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.quiz {
+  font-size: 18px;
+}
+
+.quiz ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.quiz li {
+  margin-bottom: 10px;
+}
+
+.quiz-result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
 /* Footer styling */
 footer {
   background-color: #333;
