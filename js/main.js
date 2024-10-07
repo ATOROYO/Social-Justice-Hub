@@ -97,3 +97,19 @@ function submitWealthIdea() {
     ideaInput.value = "";
   }
 }
+
+// Function to handle poll submission in wealth.html
+function submitPoll() {
+  const pollForm = document.getElementById("poll-form");
+  const selectedOption = pollForm.querySelector(
+    'input[name="strategy"]:checked'
+  );
+  const pollResults = document.getElementById("poll-results");
+
+  if (selectedOption) {
+    const resultText = `You voted for: ${selectedOption.value}`;
+    pollResults.textContent = resultText;
+  } else {
+    pollResults.textContent = "Please select a strategy before submitting.";
+  }
+}
