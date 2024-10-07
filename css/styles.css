@@ -731,6 +731,38 @@ header {
   border-radius: 5px;
 }
 
+/* Resources Section */
+.resources-section {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.resources-section h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.resources-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.resources-section li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.resources-section li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.resources-section li a:hover {
+  color: #555;
+}
+
 /* Poll Section Styling */
 .poll-section {
   background-color: #f9f9f9;
