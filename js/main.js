@@ -65,3 +65,19 @@ function submitIdea() {
     ideaInput.value = "";
   }
 }
+
+// Function to handle strategy submission in finance.html
+function submitStrategy() {
+  const strategyInput = document.getElementById("strategy-input");
+  const strategiesList = document.getElementById("submitted-strategies");
+
+  if (strategyInput.value.trim() !== "") {
+    // Create a new list item for the submitted strategy
+    const newStrategy = document.createElement("li");
+    newStrategy.textContent = strategyInput.value;
+    strategiesList.appendChild(newStrategy);
+
+    // Clear the input field after submission
+    strategyInput.value = "";
+  }
+}
