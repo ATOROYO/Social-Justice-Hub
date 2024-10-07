@@ -113,3 +113,20 @@ function submitPoll() {
     pollResults.textContent = "Please select a strategy before submitting.";
   }
 }
+
+// Function to handle quiz submission in wealth.html
+function submitQuiz() {
+  const quizResult = document.getElementById("quiz-result");
+  const q1Answer = document.querySelector('input[name="q1"]:checked');
+  const q2Answer = document.querySelector('input[name="q2"]:checked');
+
+  if (q1Answer && q2Answer) {
+    let score = 0;
+    if (q1Answer.value === "45%") score++;
+    if (q2Answer.value === "Progressive Taxation") score++;
+
+    quizResult.textContent = `You scored ${score}/2.`;
+  } else {
+    quizResult.textContent = "Please answer all questions before submitting.";
+  }
+}
