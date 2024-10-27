@@ -4,10 +4,6 @@
   cursor: pointer;
 }
 
-.menu-icon:hover {
-  color: #007bff;
-}
-
 /* General styles */
 * {
   margin: 0;
