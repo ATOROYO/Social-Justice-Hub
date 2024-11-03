@@ -1,6 +1,5 @@
 @media (max-width: 768px) {
   .nav-links ul {
-    flex-direction: column;
     position: absolute;
     top: 70px;
     right: 0;
