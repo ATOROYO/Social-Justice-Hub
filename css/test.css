@@ -1,7 +1,4 @@
 @media (max-width: 768px) {
-  .nav-links.active ul {
-  }
-
   .nav-links ul li {
     margin: 10px 0;
   }
