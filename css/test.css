@@ -1,4 +1,3 @@
-/* Responsive styles for mobile */
 @media (max-width: 768px) {
   .nav-links ul {
     display: none; /* Hide the nav links initially on mobile */
