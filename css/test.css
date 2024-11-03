@@ -1,6 +1,5 @@
 @media (max-width: 768px) {
   .nav-links.active ul {
-    display: flex;
   }
 
   .nav-links ul li {
