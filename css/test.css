@@ -1,7 +1,4 @@
 @media (max-width: 768px) {
-  .nav-links ul li {
-  }
-
   .menu-icon {
     display: block; /* Show the hamburger icon on mobile */
   }
