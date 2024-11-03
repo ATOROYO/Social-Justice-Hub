@@ -1,6 +1,5 @@
 @media (max-width: 768px) {
   .nav-links ul {
-    position: absolute;
     top: 70px;
     right: 0;
     background-color: #007bff;
