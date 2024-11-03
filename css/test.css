@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   .nav-links ul {
-    display: none; /* Hide the nav links initially on mobile */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 70px;
