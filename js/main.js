@@ -130,4 +130,5 @@ function submitQuiz() {
     quizResult.textContent = "Please answer all questions before submitting.";
   }
 }
+
 console.log("Passing time");
