@@ -131,4 +131,4 @@ function submitQuiz() {
   }
 }
 
-// console.log("Passing time");
+console.log("Passing time");
