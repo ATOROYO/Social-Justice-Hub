@@ -132,4 +132,3 @@ function submitQuiz() {
 }
 
 // console.log("Passing time");
-//
